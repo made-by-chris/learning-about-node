@@ -9,4 +9,26 @@
   <body>
     <h1>you received the HTML file!</h1>
   </body>
+  <script>
+    fetch("/playlist")
+      .then((res) => res.json())
+      .then(
+        (data) =>
+          (document.querySelector("body").innerHTML = data
+            .map((v) => `<p>${v.url}<a href="${v.url}">${v.name}</a></p>`)
+            .join(""))
+      );
+
+    fetch("/video", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        url: "https://www.youtube.com/watch?v=NW_djQS_N8U",
+        name: "make a city in blender",
+        category: "3d modelling",
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  </script>
 </html>
