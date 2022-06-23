@@ -10,6 +10,10 @@
     <h1>you received the HTML file!</h1>
   </body>
   <script>
+    console.log("bla");
+    fetch("/video", {
+      method: "DELETE",
+    }).then((res) => console.log(res));
     fetch("/playlist")
       .then((res) => res.json())
       .then(

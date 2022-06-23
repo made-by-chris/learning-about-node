@@ -23,12 +23,22 @@ app.get("/playlist", (req, res) => {
   });
 });
 
+// GET POST PUT DELETE
+// http status codes
+// 200 404 403 204 501
+
 app.post("/video", (req, res) => {
   console.log(req.body);
-  // what are http status codes
-  // what are request headers?
-  // what are response headers?
+  // lets paint a big picture ( fake spotify/discord API )
   res.send("video added to playlist");
+});
+
+app.put("/video", (req, res) => {
+  res.send("video updated");
+});
+
+app.delete("/video", (req, res) => {
+  res.status(204).end();
 });
 
 app.listen(8000, () => console.log("server is running on port 8000"));
