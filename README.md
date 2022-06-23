@@ -5,7 +5,6 @@ each folder contains a different example of using node
 - basics
 
   - a simple javascript "adding" program
-
     `node basics/add.js 5 18`
 
   - a `client` program that talks to the `server`
