@@ -1,0 +1,38 @@
+[
+    {
+        "NAME": "paul",
+        "CAMPUS": false
+    },
+    {
+        "NAME": "sandra",
+        "CAMPUS": true
+    },
+    {
+        "NAME": "andreas",
+        "CAMPUS": true
+    },
+    {
+        "NAME": "arthur",
+        "CAMPUS": "UNDEFINED"
+    },
+    {
+        "NAME": "ognjen",
+        "CAMPUS": false
+    },
+    {
+        "NAME": "deep",
+        "CAMPUS": false
+    },
+    {
+        "NAME": "tiyas",
+        "CAMPUS": false
+    },
+    {
+        "NAME": "neha",
+        "CAMPUS": true
+    },
+    {
+        "NAME": "G",
+        "CAMPUS": "UNDEFINED"
+    }
+]
